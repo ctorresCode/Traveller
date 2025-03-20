@@ -51,21 +51,22 @@
 }
 
 .atraccion img {
-    width: 100%; /* Ancho completo dentro de la tarjeta */
-    height: 200px; /* Altura consistente para todas las imágenes */
-    object-fit: cover; /* Recorta la imagen para evitar deformaciones */
+    width: 100%; /* Se ajusta al ancho del contenedor */
+    max-width: 350px; /* Tamaño máximo de la imagen */
+    height: 180px; /* Mantiene una altura uniforme */
+    object-fit: cover; /* Recorta la imagen sin distorsionar */
     border-radius: 8px;
     margin-bottom: 10px;
 }
 
 .atraccion h3 {
-    font-size: 16px;
-    margin: 8px 0;
+    font-size: 18px; /* Aumentar el tamaño del título */
+    font-weight: bold;
     color: #ffffff;
 }
 
 .atraccion p {
-    font-size: 14px;
+    font-size: 15px; /* Hacer más legible el párrafo */
     color: #ffffff;
-    margin: 0;
+    margin-top: 5px;
 }
