@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos del header */
+header {
+  width: 100%;
+  background-color: #023e8a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px 0; /* Reduje el padding */
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 20px;
+}
+
+/* Contenedor superior (logo + opciones) */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  height: 100px;
+}
+
+/* Opciones (moneda e icono de usuario) */
+.opciones {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.opciones a {
+  white-space: nowrap; /* Evita que el texto se divida */
+}
+
+/* Botón de moneda e idioma */
+.currency-button, .boton-cuenta {
+  padding: 15px 25px;
+  font-size: 18px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent; /* Sin fondo por defecto */
+  border-radius: 0; /* Sin bordes redondeados por defecto */
+}
+
+.currency-button:hover {
+  color: white;
+  background-color: #ffffff71; /* Fondo claro al seleccionar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.boton-cuenta {
+  background-color: #F1FAEE;
+  color: #0056b3;
+}
+
+.boton-cuenta:hover {
+  color: #457B9D;
+}
+
+/* Estilos de la clase down */
+.down {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px 40px;
+  margin-top: 10px 20px; /* Espaciado entre el logo y down */
+}
+
+.down a{
+  color: white;
+}
+
+/* Botones de servicios */
+.boton-servicios {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  background-color: transparent; /* Sin fondo por defecto */
+  padding: 10px 15px; /* Espaciado interno */
+  border-radius: 0; /* Sin bordes redondeados por defecto */
+}
+
+.boton-servicios:hover,.boton-servicios:focus {
+  background-color: #f1f1f17e; /* Fondo claro al seleccionar */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.iconos-servicios {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.selector {
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+/* Botón Guardar */
+.save-button {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #457B9D;
+}

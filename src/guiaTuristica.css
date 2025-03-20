@@ -1,0 +1,71 @@
+.principales {
+    text-align: center;
+    padding: 20px; /* Espaciado adicional para el contenedor principal */
+}
+
+.contenedor-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.boton-izquierda, .boton-derecha {
+    border: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.boton-izquierda:hover, .boton-derecha:hover {
+    background-color: #555;
+}
+
+.atracciones {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth; /* Desplazamiento suave */
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: nowrap; /* Para que las tarjetas se mantengan en una fila única */
+    white-space: nowrap; /* Evita que los elementos salten de línea */
+}
+
+.principales h2{
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.atraccion {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px; /* Espaciado ajustado */
+    background-color: #013A63;
+    box-shadow: 0 8px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 0 0 700px; /* Tamaño uniforme para cada tarjeta */
+    max-width: 400px; /* Ancho consistente */
+}
+
+.atraccion img {
+    width: 100%; /* Ancho completo dentro de la tarjeta */
+    height: 200px; /* Altura consistente para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para evitar deformaciones */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.atraccion h3 {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+.atraccion p {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0;
+}
