@@ -10,8 +10,16 @@ async function loadPage(page) {
   document.getElementById('content').innerHTML = pageContent;  // Inyectar el contenido en el contenedor
 }
 
+async function loadFooter(page) {
+  const response = await fetch(`/src/${page}.html`);  // Cargar la página específica
+  const pageContent = await response.text();  // Obtener el contenido de la página
+  document.getElementById('footer').innerHTML = pageContent;  // Inyectar el contenido en el contenedor
+}
+
+
 // Cargar el nav cuando se cargue la página
 window.onload = function(){
   loadNav();
-  loadPage('Index');
+  loadPage('home');
+  loadFooter('footer');
 }

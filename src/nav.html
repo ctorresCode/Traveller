@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="src/nav.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navbar">  
-            <div class="top">
-                <div class="logo">
-                    <a href="main.html"><img src="public/Iconos/Logo2SinFondo.png" alt="Logo Traveller"></a>
-                </div>
-                <div class="opciones">
-                    <a class="currency-button" id="openModal">USD</a>
-                    <a class="currency-button" id="openModalIdioma">Español</a>
-                    <a class="boton-cuenta">Inicia Sesión</a>
-                    <a class="boton-cuenta">Regístrate</a>
-                </div>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">✈</div> <!--✈ paporsia-->
+                <span>Traveller</span>
+            </a>
+            <button class="mobile-menu-btn">
+                <span class="menu-icon"></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="loadPage('home')">Inicio</a></li>
+                    <li><a href="#" onclick="loadPage('paquetesPersonalizados')">Vuelos</a></li>
+                    <li><a href="#" onclick="loadPage('paquetesPersonalizados')">Hoteles</a></li>
+                    <li><a href="#" onclick="loadPage('paquetesPersonalizados')">Renta de vehiculos</a></li>
+                    <li><a href="#" onclick="loadPage('paquetesPersonalizados')">Paquetes Personalizados</a></li>
+                    <li><a href="#" onclick="loadPage('guiaTuristica')">Guia Turistica</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" class="registrarse">Registrarse</a>
+                <a href="#" class="btn btn-primary">Iniciar Sesión</a>
             </div>
-            <div class="down">
-                <a class="boton-servicios" href="#" onclick=""> <img class="iconos-servicios" src="public/Iconos/bed.png"> Alojamientos </a>
-                <a class="boton-servicios" href="#"> <img class="iconos-servicios" src="public/Iconos/airplane-mode.png"> Vuelos  </a>
-                <a class="boton-servicios" href="#"> <img class="iconos-servicios" src="public/Iconos/transport.png"> Alquiler de Vehiculos </a>
-                <a class="boton-servicios" href="#" onclick="loadPage('guiaTuristica')" > <img class="iconos-servicios" src="public/Iconos/travel.png"> Guias Turisticas </a>
-                <a class="boton-servicios" href="#" onclick="loadPage('paquetesPersonalizados')"> <img class="iconos-servicios" src="public/Iconos/Paquete.png"> Paquetes Personalizados </a>
-            </div>
-        </nav>
+        </div>
     </header>
     
 </body>

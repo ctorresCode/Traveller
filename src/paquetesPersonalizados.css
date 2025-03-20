@@ -24,7 +24,7 @@ article {
   /* basic article elements styling */
   article h2 {
     margin: 0 0 18px 0;
-    font-family: "Bebas Neue", cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.9rem;
     letter-spacing: 0.06em;
     color: var(--title-color);
@@ -91,15 +91,15 @@ article {
   }
   
   
-  body {
-    /*margin: 0;*/
-    /*padding: 48px 0;*/
+  /* body {
+    margin: 0;
+    padding: 48px 0;
     font-family: "Figtree", sans-serif;
     font-size: 1.2rem;
     line-height: 1.6rem;
-    /*background-image: linear-gradient(45deg, #7c9885, #b5b682);*/
+    background-image: linear-gradient(45deg, #7c9885, #b5b682);
     min-height: 100vh;
-  }
+  } */
   
   .btn{
     padding: 10px;
